@@ -1,0 +1,80 @@
+.redf {
+  color: red;
+}
+
+.txt-example {
+  min-height: calc(100vh - 60px);
+}
+
+.main-page {
+  min-height: calc(100vh - 60px);
+  background: #c33764;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1d2671, #c33764);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1d2671, #c33764);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.main-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+
+.login-page {
+  min-height: calc(100vh - 60px);
+  background: #009fff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ec2f4b, #009fff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec2f4b, #009fff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.login-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+.register-page {
+  min-height: calc(100vh - 60px);
+  background: #fc466b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3f5efb, #fc466b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.register-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+.profile-page {
+  min-height: calc(100vh - 60px);
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.profile-page .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+.profile-page .container p {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head> <%-include('./models/head.ejs') %> </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header> <%-include('./models/header.ejs') %> </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-page">
+      <div class="container txt-example">
+        <div class="card text-center mt-5 targ">
+          <div class="card-body">
+            <h1><i class="bi bi-lock-fill"></i>Login or Register</h1>
+            <a href="/login" class="btn btn-light m-2"
+              ><i class="bi bi-person-fill"></i>Login</a
+            >
+            <a href="/Signup" class="btn btn-light m-2"
+              ><i class="bi bi-person-fill"></i>Signup</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer> <%-include('./models/footer.ejs') %> </footer>
+  </body>
+</html>

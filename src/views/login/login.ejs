@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%-include('../models/head.ejs') %>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header><%-include('../models/header.ejs') %></header>
+
+    <!-- MAIN CONTENT -->
+    <div class="login-page">
+      <div class="container txt-example">
+        <div class="col-sm-6 mx-auto txt-example">
+          <div class="card mt-5 targ">
+            <div class="card-body">
+              <h1 class="text-center">
+                <i class="bi bi-box-arrow-in-right"></i>
+                LOGIN
+              </h1>
+
+              <% if(message.length > 0){ %>
+                <div class="alert alert-danger">
+                    <%= message %>
+                </div>
+              <% } %>
+
+              <form action="/login" method="post">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Insert your email"
+                  />
+
+                  <br />
+
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Insert your password"
+                  />
+
+                  <br />
+
+                  <input type="submit" class="btn btn-dark m-2 form-control" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer><%-include('../models/footer.ejs') %></footer>
+  </body>
+</html>

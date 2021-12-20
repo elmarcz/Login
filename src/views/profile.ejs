@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head> <%-include('./models/head.ejs') %> </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header> <%-include('./models/header.ejs') %> </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="profile-page">
+      <div class="container txt-example">
+        <h1>PROFILE</h1>
+
+        <br />
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title"><i class="bi bi-person-fill"></i>Local</h3>
+              <p>
+                <strong>id: </strong><%= user._id %>
+                <strong>email: </strong><%= user.local.email %>
+                <strong>password: </strong><%= user.local.password %>
+              </p>
+              <a href="/logout" class="btn btn-light btn-sm">
+                logout
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer> <%-include('./models/footer.ejs') %> </footer>
+  </body>
+</html>
