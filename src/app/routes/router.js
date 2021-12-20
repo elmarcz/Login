@@ -5,13 +5,13 @@ module.exports = async (app, passport) => {
         res.render('index');
     })
 
-    app.get('/login', (req, res) => {
+    app.get('/login', isLoggedIn2, (req, res) => {
         res.render('login/login', {
             message: req.flash('loginMessage')
         })
     })
 
-    app.get('/signup', (req, res) => {
+    app.get('/signup', isLoggedIn2, (req, res) => {
         res.render('login/signup', {
             message: req.flash('signupMessage')
         })
@@ -19,6 +19,10 @@ module.exports = async (app, passport) => {
 
     app.get('/err-login', (req, res) => {
         res.render('err/notLoged')
+    })
+
+    app.get('/err-nlogin', (req, res) => {
+        res.render('err/yepLoged')
     })
 
     app.get('/profile', isLoggedIn, (req, res) => {
@@ -49,5 +53,13 @@ module.exports = async (app, passport) => {
             return next();
         }
             return res.redirect('/err-login')
+    }
+
+    function isLoggedIn2(req, res, next){
+        if(!req.isAuthenticated()){
+            return next();
+        }
+            return res.redirect('/err-nlogin')
+            
     }
 }
