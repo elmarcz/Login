@@ -1,0 +1,4 @@
+{
+    "URI": "mongodb uri",
+    "PORT": "a port to live the server"
+}
