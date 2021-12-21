@@ -2,7 +2,6 @@
    <img src="./src/public/img/logo.png" height="250px"/>  
 </p>
 <h1 align="center">Login with express</h1>
-<p align="center">A project to practice and learn passpory (Fullstack)</p>
 <h3 align="center">🔨 Built with ⚙️</h3>
 
 <p align="center">
